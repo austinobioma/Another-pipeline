@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {
-                git 'https://github.com/austinobioma/Hepa-project.git'
+                git '.git'
             }
         }
       stage('Build') {
@@ -56,16 +56,16 @@ pipeline {
                  rtUpload (
 
                      serverId: 'my-jfrog',
-                     spec: ''' {
+                       spec: ''' {
                                "files":[
                                     {
                                     "pattern": "MywebApp/target/MywebApp.war",
                                     "target": "jenkins-repo/MywebApp-files/"
                                     }
-                                    ]
-                               }''',
-                            )
-                        )  
-        }
+                                 ]
+                        }''',
+                 )
+             }
+        )
      }
  }
