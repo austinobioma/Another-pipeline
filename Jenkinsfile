@@ -49,7 +49,7 @@ pipeline {
             )
           }
         }
-        stage('Artifact Upload') (
+        stage('Artifact Upload') {
 
              steps {
 
@@ -66,6 +66,6 @@ pipeline {
                         }''',
                  )
              }
-        )
+        }
      }
  }
