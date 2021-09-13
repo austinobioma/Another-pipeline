@@ -60,7 +60,7 @@ pipeline {
                                "files":[
                                     {
                                     "pattern": "MywebApp/target/MywebApp.war",
-                                    "target": "jenkins-repo/MywebApp-files/"
+                                    "target": "jenkins-integrations/MywebApp-files/"
                                     }
                                  ]
                         }''',
