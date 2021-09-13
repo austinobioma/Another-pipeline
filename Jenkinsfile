@@ -60,7 +60,7 @@ pipeline {
                                "files":[
                                     {
                                     "pattern": "MywebApp/target/MywebApp.war",
-                                    "target": "jenkins-integrations/MywebApp-files/","jenkins-snapshot/"
+                                    "target": "jenkins-integrations/MywebApp-files/";"jenkins-snapshot/MywebApp-file"
                                     buildName: 'holyFrog',
                                     buildNumber: '10',
                                     }
